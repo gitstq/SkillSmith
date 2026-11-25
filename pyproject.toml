@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillsmith"
+version = "1.0.0"
+description = "Zero-dependency CLI toolkit to scaffold, validate, pack and install agent skill packages."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "gitstq" }]
+keywords = ["agent", "skills", "cli", "packaging", "toolkit"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Build Tools",
+]
+
+[project.scripts]
+skillsmith = "skillsmith.cli:run"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/SkillSmith"
+Issues = "https://github.com/gitstq/SkillSmith/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
