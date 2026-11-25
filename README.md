@@ -32,8 +32,8 @@ Agent 技能包（Skill）正成为 AI 工作流的标准组件，但技能包�
 ## 🚀 快速开始
 
 ```bash
-# 从 PyPI 安装（或使用下方源码安装）
-pip install skillsmith
+# 从源码安装
+pip install git+https://github.com/gitstq/SkillSmith.git
 
 # 30 秒体验完整流程
 skillsmith new my-skill --description "我的第一个技能包"

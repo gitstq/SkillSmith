@@ -32,8 +32,8 @@ Agent skill packages are becoming the standard building blocks of AI workflows, 
 ## 🚀 Quick Start
 
 ```bash
-# Install from PyPI (or from source below)
-pip install skillsmith
+# Install from source
+pip install git+https://github.com/gitstq/SkillSmith.git
 
 # Full flow in 30 seconds
 skillsmith new my-skill --description "My first skill package"
